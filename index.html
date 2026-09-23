@@ -10,40 +10,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="index.html">LearnSpace</a>
+    <header class="bg-slate-800 text-white">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-5">
+            
+            <a href="index.html" class="text-2xl font-bold">
+                LearnSpace
+            </a>
 
-            <div>
-                <a href="index.html">Home</a>
-                <a href="courses.html">Courses</a>
-                <a href="contact.html">Contact</a>
+            <div class="flex gap-6">
+                <a href="index.html" class="hover:text-yellow-300">Home</a>
+                <a href="course.html" class="hover:text-yellow-300">Courses</a>
+                <a href="contact.html" class="hover:text-yellow-300">Contact</a>
             </div>
+
         </nav>
     </header>
+
 
     <!-- Hero Section -->
     <main>
 
-        <section>
-            <h1>Learn. Grow. Build Your Future.</h1>
+        <section class="bg-blue-50 py-20 px-5 text-center">
 
-            <p>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-5">
+                Learn. Grow. Build Your Future.
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-8">
                 Learn practical skills through simple and beginner-friendly courses.
             </p>
 
-            <a href="courses.html">Explore Courses</a>
+            <a 
+                href="course.html"
+                class="inline-block bg-slate-800 text-white px-6 py-3 rounded-lg hover:bg-slate-700"
+            >
+                Explore Courses
+            </a>
+
         </section>
 
     </main>
 
+
     <!-- Footer -->
-    <footer>
+    <footer class="bg-slate-800 text-white text-center p-5">
         <p>© 2026 LearnSpace. All rights reserved.</p>
     </footer>
+
 
     <script src="script.js"></script>
 
