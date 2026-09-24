@@ -14,21 +14,28 @@
 
     <!-- Navigation -->
     <header class="bg-slate-800 text-white">
+    
         <nav class="max-w-6xl mx-auto flex justify-between items-center p-5">
 
             <a href="index.html" class="text-2xl font-bold">
                 LearnSpace
             </a>
 
-            <div class="flex gap-6">
+            <button id="menuButton" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+            <div id="menu" class="hidden md:flex gap-6">
                 <a href="index.html" class="hover:text-yellow-300">Home</a>
                 <a href="course.html" class="hover:text-yellow-300">Courses</a>
                 <a href="contact.html" class="hover:text-yellow-300">Contact</a>
             </div>
 
         </nav>
-    </header>
 
+</nav>
+
+    </header>
 
     <!-- Courses -->
     <main>
@@ -61,6 +68,12 @@
 
                 <!-- HTML & CSS -->
                 <article class="course-card bg-white p-6 rounded-lg shadow" data-category="web">
+                    
+                    <img
+                        src="image/html.jpg"
+                        alt="HTML and CSS course"
+                        class="w-full h-40 object-cover rounded-lg mb-4">
+
                     <h2 class="text-xl font-bold mb-3">
                         HTML & CSS
                     </h2>
@@ -77,6 +90,12 @@
 
                 <!-- JavaScript -->
                 <article class="course-card bg-white p-6 rounded-lg shadow" data-category="web">
+                    
+                    <img
+                        src="image/JavaScript.png"
+                        alt="JavaScript course"
+                        class="w-full h-40 object-cover rounded-lg mb-4">
+                    
                     <h2 class="text-xl font-bold mb-3">
                         JavaScript Basics
                     </h2>
@@ -90,9 +109,14 @@
                     </button>
                 </article>
 
-
                 <!-- UI Design -->
                 <article class="course-card bg-white p-6 rounded-lg shadow" data-category="design">
+                    
+                    <img
+                        src="image/UI design.png"
+                        alt="UI Design course"
+                        class="w-full h-40 object-cover rounded-lg mb-4">
+                    
                     <h2 class="text-xl font-bold mb-3">
                         UI Design
                     </h2>

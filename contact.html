@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnSpace - Contact</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <header class="bg-slate-800 text-white">
+        
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-5">
+
+            <a href="index.html" class="text-2xl font-bold">
+                LearnSpace
+            </a>
+
+            <button id="menuButton" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+            <div id="menu" class="hidden md:flex gap-6">
+                <a href="index.html" class="hover:text-yellow-300">Home</a>
+                <a href="course.html" class="hover:text-yellow-300">Courses</a>
+                <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+
+        <section class="py-16 px-5">
+
+            <h1 class="text-4xl font-bold text-center text-slate-800 mb-4">
+                Contact Us
+            </h1>
+
+            <p class="text-center text-gray-600 mb-10">
+                Have a question? Send us a message.
+            </p>
+
+            <form id="contactForm" class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow">
+
+                <!-- Name -->
+                <label for="name" class="block font-semibold mb-2">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    class="w-full border border-gray-300 rounded-lg p-3 mb-2"
+                    required
+                >
+
+                <p id="nameError" class="text-red-600 text-sm mb-4"></p>
+
+
+                <!-- Email -->
+                <label for="email" class="block font-semibold mb-2">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    class="w-full border border-gray-300 rounded-lg p-3 mb-2"
+                    required
+                >
+
+                <p id="emailError" class="text-red-600 text-sm mb-4"></p>
+
+
+                <!-- Message -->
+                <label for="message" class="block font-semibold mb-2">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    class="w-full border border-gray-300 rounded-lg p-3 mb-2"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <p id="messageError" class="text-red-600 text-sm mb-4"></p>
+
+
+                <button
+                    type="submit"
+                    class="w-full bg-slate-800 text-white py-3 rounded-lg hover:bg-slate-700"
+                >
+                    Send Message
+                </button>
+
+                <p id="successMessage" class="text-green-600 text-center mt-4"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white text-center p-5">
+        <p>© 2026 LearnSpace. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -15,12 +15,16 @@
     <!-- Navigation -->
     <header class="bg-slate-800 text-white">
         <nav class="max-w-6xl mx-auto flex justify-between items-center p-5">
-            
+
             <a href="index.html" class="text-2xl font-bold">
                 LearnSpace
             </a>
 
-            <div class="flex gap-6">
+            <button id="menuButton" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+            <div id="menu" class="hidden md:flex gap-6">
                 <a href="index.html" class="hover:text-yellow-300">Home</a>
                 <a href="course.html" class="hover:text-yellow-300">Courses</a>
                 <a href="contact.html" class="hover:text-yellow-300">Contact</a>
@@ -146,6 +150,55 @@
             </div>
 
         </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 px-5 bg-white">
+
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-10">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="max-w-2xl mx-auto space-y-4">
+
+                <div class="border rounded-lg p-4">
+                    <button
+                        onclick="toggleFAQ(1)"
+                        class="w-full text-left font-semibold">
+                            What is LearnSpace?
+                    </button>
+
+                    <p id="faq1" class="hidden mt-3 text-gray-600">
+                        LearnSpace is a simple platform for learning practical skills.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <button
+                        onclick="toggleFAQ(2)"
+                        class="w-full text-left font-semibold">
+                            Are the courses beginner friendly?
+                        </button>
+
+                    <p id="faq2" class="hidden mt-3 text-gray-600">
+                        Yes. The courses are designed for beginners.
+                    </p>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <button
+                        onclick="toggleFAQ(3)"
+                        class="w-full text-left font-semibold">
+                            How do I get started?
+                    </button>
+
+                    <p id="faq3" class="hidden mt-3 text-gray-600">
+                        Visit the Courses page and choose a course to explore.
+                    </p>
+                </div>
+
+            </div>
+
+    </section>
     </main>
 
     <!-- Footer -->
