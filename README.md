@@ -37,7 +37,7 @@ LearnSpace is a simple and beginner friendly learning platform where users can e
 
 ## Live Demo
 
-
+[View LearnSpace Live](https://omononstephens.github.io/LearnSpace/)
 
 ## GitHub Repository
 
